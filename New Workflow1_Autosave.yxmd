@@ -1,0 +1,615 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2021.1">
+  <Nodes>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="66" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\LalitaEranki\OneDrive - AuditBoard, Inc\Documents\data team files\Alteryx Perp\4701229_3BJP240W.xlsx|||`Sheet1$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>4701229_3BJP240W.xlsx
+Query=`Sheet1$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="emails" size="255" source="File: C:\Users\LalitaEranki\OneDrive - AuditBoard, Inc\Documents\data team files\Alteryx Perp\4701229_3BJP240W.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Entries" source="File: C:\Users\LalitaEranki\OneDrive - AuditBoard, Inc\Documents\data team files\Alteryx Perp\4701229_3BJP240W.xlsx|||`Sheet1$`" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
+        <Position x="162" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>emails</Field>
+          <ErrorHandling>Last</ErrorHandling>
+          <RootName>
+          </RootName>
+          <Delimeters value="," />
+          <NumFields value="3" />
+          <Flags value="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="473" y="5" width="145" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Container 7</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="True" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="2">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+            <Position x="498" y="54" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <NumRows value="106" />
+              <Fields>
+                <Field name="emails" />
+                <Field name="Entries" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>Odilia95@askjeeves.com</c>
+                  <c>35</c>
+                </r>
+                <r>
+                  <c>Conrad22@hotmail.com</c>
+                  <c>35</c>
+                </r>
+                <r>
+                  <c>Constantine37@askjeeves.com</c>
+                  <c>35</c>
+                </r>
+                <r>
+                  <c>Godwin75@hotmail.com</c>
+                  <c>34</c>
+                </r>
+                <r>
+                  <c>Wade18@yahoo.com</c>
+                  <c>34</c>
+                </r>
+                <r>
+                  <c>Beverly72@gmail.com</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>Aldous15@hotmail.com</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>Joachim4@hotmail.com</c>
+                  <c>32</c>
+                </r>
+                <r>
+                  <c>Gawain43@live.com</c>
+                  <c>31</c>
+                </r>
+                <r>
+                  <c>Theobald55@yahoo.com</c>
+                  <c>31</c>
+                </r>
+                <r>
+                  <c>Odo51@live.com</c>
+                  <c>30</c>
+                </r>
+                <r>
+                  <c>Merry98@live.com</c>
+                  <c>29</c>
+                </r>
+                <r>
+                  <c>Reina22@live.com</c>
+                  <c>29</c>
+                </r>
+                <r>
+                  <c>Sigourney45@me.com</c>
+                  <c>29</c>
+                </r>
+                <r>
+                  <c>Heloise71@icloud.com</c>
+                  <c>28</c>
+                </r>
+                <r>
+                  <c>Godwin44@gmail.com</c>
+                  <c>28</c>
+                </r>
+                <r>
+                  <c>Wade27@askjeeves.com</c>
+                  <c>28</c>
+                </r>
+                <r>
+                  <c>Reina19@yahoo.com</c>
+                  <c>27</c>
+                </r>
+                <r>
+                  <c>Bennett55@hotmail.com</c>
+                  <c>27</c>
+                </r>
+                <r>
+                  <c>Odilia69@me.com</c>
+                  <c>26</c>
+                </r>
+                <r>
+                  <c>Rhoslyn94@me.com</c>
+                  <c>26</c>
+                </r>
+                <r>
+                  <c>Alistair80@askjeeves.com</c>
+                  <c>26</c>
+                </r>
+                <r>
+                  <c>Daisy14@me.com</c>
+                  <c>25</c>
+                </r>
+                <r>
+                  <c>Rhoslyn100@askjeeves.com</c>
+                  <c>25</c>
+                </r>
+                <r>
+                  <c>Alistair54@live.com</c>
+                  <c>25</c>
+                </r>
+                <r>
+                  <c>Conrad7@me.com</c>
+                  <c>25</c>
+                </r>
+                <r>
+                  <c>Milo51@live.com</c>
+                  <c>25</c>
+                </r>
+                <r>
+                  <c>Edith13@icloud.com</c>
+                  <c>24</c>
+                </r>
+                <r>
+                  <c>Heloise26@live.com</c>
+                  <c>24</c>
+                </r>
+                <r>
+                  <c>Margery54@gmail.com</c>
+                  <c>24</c>
+                </r>
+                <r>
+                  <c>Randall27@askjeeves.com</c>
+                  <c>24</c>
+                </r>
+                <r>
+                  <c>Beverly63@hotmail.com</c>
+                  <c>23</c>
+                </r>
+                <r>
+                  <c>Emma87@icloud.com</c>
+                  <c>23</c>
+                </r>
+                <r>
+                  <c>Aldous69@gmail.com</c>
+                  <c>23</c>
+                </r>
+                <r>
+                  <c>Isabella41@askjeeves.com</c>
+                  <c>22</c>
+                </r>
+                <r>
+                  <c>Rhoslyn55@live.com</c>
+                  <c>22</c>
+                </r>
+                <r>
+                  <c>Conrad94@gmail.com</c>
+                  <c>22</c>
+                </r>
+                <r>
+                  <c>Gawain99@askjeeves.com</c>
+                  <c>22</c>
+                </r>
+                <r>
+                  <c>Ladislas22@me.com</c>
+                  <c>22</c>
+                </r>
+                <r>
+                  <c>Randall51@me.com</c>
+                  <c>22</c>
+                </r>
+                <r>
+                  <c>Warner46@live.com</c>
+                  <c>22</c>
+                </r>
+                <r>
+                  <c>Dietrich26@me.com</c>
+                  <c>21</c>
+                </r>
+                <r>
+                  <c>Agnes50@hotmail.com</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Beatrice23@askjeeves.com</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Isabella65@live.com</c>
+                  <c>19</c>
+                </r>
+                <r>
+                  <c>Odilia20@yahoo.com</c>
+                  <c>19</c>
+                </r>
+                <r>
+                  <c>Warner9@hotmail.com</c>
+                  <c>19</c>
+                </r>
+                <r>
+                  <c>Beatrice68@hotmail.com</c>
+                  <c>18</c>
+                </r>
+                <r>
+                  <c>Dietrich13@gmail.com</c>
+                  <c>18</c>
+                </r>
+                <r>
+                  <c>Trea52@icloud.com</c>
+                  <c>17</c>
+                </r>
+                <r>
+                  <c>Drake47@live.com</c>
+                  <c>17</c>
+                </r>
+                <r>
+                  <c>Ladislas53@askjeeves.com</c>
+                  <c>17</c>
+                </r>
+                <r>
+                  <c>Agnes56@icloud.com</c>
+                  <c>16</c>
+                </r>
+                <r>
+                  <c>Edith75@yahoo.com</c>
+                  <c>16</c>
+                </r>
+                <r>
+                  <c>Percival47@hotmail.com</c>
+                  <c>15</c>
+                </r>
+                <r>
+                  <c>Randall12@hotmail.com</c>
+                  <c>15</c>
+                </r>
+                <r>
+                  <c>Robin29@askjeeves.com</c>
+                  <c>15</c>
+                </r>
+                <r>
+                  <c>Ella14@askjeeves.com</c>
+                  <c>14</c>
+                </r>
+                <r>
+                  <c>Everard48@live.com</c>
+                  <c>14</c>
+                </r>
+                <r>
+                  <c>Gawain78@gmail.com</c>
+                  <c>14</c>
+                </r>
+                <r>
+                  <c>Cecily40@live.com</c>
+                  <c>13</c>
+                </r>
+                <r>
+                  <c>Merry74@yahoo.com</c>
+                  <c>13</c>
+                </r>
+                <r>
+                  <c>Alistair0@icloud.com</c>
+                  <c>13</c>
+                </r>
+                <r>
+                  <c>Beatrice2@yahoo.com</c>
+                  <c>12</c>
+                </r>
+                <r>
+                  <c>Percival67@gmail.com</c>
+                  <c>12</c>
+                </r>
+                <r>
+                  <c>Alba35@live.com</c>
+                  <c>11</c>
+                </r>
+                <r>
+                  <c>Beverly65@live.com</c>
+                  <c>11</c>
+                </r>
+                <r>
+                  <c>Constantine54@me.com</c>
+                  <c>11</c>
+                </r>
+                <r>
+                  <c>Ella51@live.com</c>
+                  <c>10</c>
+                </r>
+                <r>
+                  <c>Drake16@icloud.com</c>
+                  <c>10</c>
+                </r>
+                <r>
+                  <c>Robin78@gmail.com</c>
+                  <c>10</c>
+                </r>
+                <r>
+                  <c>Theobald80@askjeeves.com</c>
+                  <c>10</c>
+                </r>
+                <r>
+                  <c>Alba71@me.com</c>
+                  <c>9</c>
+                </r>
+                <r>
+                  <c>Matilda22@gmail.com</c>
+                  <c>9</c>
+                </r>
+                <r>
+                  <c>Jeffery25@me.com</c>
+                  <c>9</c>
+                </r>
+                <r>
+                  <c>Wolfgang38@icloud.com</c>
+                  <c>9</c>
+                </r>
+                <r>
+                  <c>Agnes41@gmail.com</c>
+                  <c>8</c>
+                </r>
+                <r>
+                  <c>Odilia65@icloud.com</c>
+                  <c>8</c>
+                </r>
+                <r>
+                  <c>Agnes6@me.com</c>
+                  <c>7</c>
+                </r>
+                <r>
+                  <c>Sigourney41@icloud.com</c>
+                  <c>7</c>
+                </r>
+                <r>
+                  <c>Godwin62@icloud.com</c>
+                  <c>7</c>
+                </r>
+                <r>
+                  <c>Percival0@me.com</c>
+                  <c>7</c>
+                </r>
+                <r>
+                  <c>Trea14@gmail.com</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>Matilda60@yahoo.com</c>
+                  <c>5</c>
+                </r>
+                <r>
+                  <c>Bennett20@me.com</c>
+                  <c>5</c>
+                </r>
+                <r>
+                  <c>Robin77@yahoo.com</c>
+                  <c>5</c>
+                </r>
+                <r>
+                  <c>Agnes88@yahoo.com</c>
+                  <c>4</c>
+                </r>
+                <r>
+                  <c>Rhoslyn60@icloud.com</c>
+                  <c>4</c>
+                </r>
+                <r>
+                  <c>Bennett54@yahoo.com</c>
+                  <c>4</c>
+                </r>
+                <r>
+                  <c>Odo27@icloud.com</c>
+                  <c>4</c>
+                </r>
+                <r>
+                  <c>Ava62@me.com</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>Ava100@icloud.com</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>Emma19@me.com</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>Rhoslyn74@yahoo.com</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>Sigourney2@askjeeves.com</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>Constantine59@icloud.com</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>Alistair47@gmail.com</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>Joachim4@me.com</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>Joachim24@icloud.com</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>Heloise90@me.com</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>Isabella49@hotmail.com</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>Rhoslyn89@gmail.com</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>Alistair88@hotmail.com</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>Milo95@hotmail.com</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>Emma96@live.com</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c>Everard55@askjeeves.com</c>
+                  <c>0</c>
+                </r>
+              </Data>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+        </Node>
+        <Node ToolID="4">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
+            <Position x="594" y="54" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Field>emails</Field>
+              <ErrorHandling>Last</ErrorHandling>
+              <RootName>email_new</RootName>
+              <Delimeters value="@" />
+              <NumFields value="3" />
+              <Flags value="0" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
+        </Node>
+        <Node ToolID="5">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+            <Position x="702" y="54" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField field="email_new2" action="Max" rename="Max_email_new2" />
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>New Workflow1_Autosave</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

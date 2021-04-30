@@ -1,0 +1,193 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2021.1">
+  <Nodes>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="234" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\LalitaEranki\Downloads\mafs.csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>mafs.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Couple" size="254" source="File: C:\Users\LalitaEranki\Downloads\mafs.csv" type="V_String" />
+            <Field name="Season" size="254" source="File: C:\Users\LalitaEranki\Downloads\mafs.csv" type="V_String" />
+            <Field name="Location" size="254" source="File: C:\Users\LalitaEranki\Downloads\mafs.csv" type="V_String" />
+            <Field name="Name" size="254" source="File: C:\Users\LalitaEranki\Downloads\mafs.csv" type="V_String" />
+            <Field name="Age" size="254" source="File: C:\Users\LalitaEranki\Downloads\mafs.csv" type="V_String" />
+            <Field name="Gender" size="254" source="File: C:\Users\LalitaEranki\Downloads\mafs.csv" type="V_String" />
+            <Field name="Occupation" size="254" source="File: C:\Users\LalitaEranki\Downloads\mafs.csv" type="V_String" />
+            <Field name="Decision" size="254" source="File: C:\Users\LalitaEranki\Downloads\mafs.csv" type="V_String" />
+            <Field name="Status" size="254" source="File: C:\Users\LalitaEranki\Downloads\mafs.csv" type="V_String" />
+            <Field name="DrPepperSchwartz" size="254" source="File: C:\Users\LalitaEranki\Downloads\mafs.csv" type="V_String" />
+            <Field name="DrLoganLevkoff" size="254" source="File: C:\Users\LalitaEranki\Downloads\mafs.csv" type="V_String" />
+            <Field name="DrJosephCilona" size="254" source="File: C:\Users\LalitaEranki\Downloads\mafs.csv" type="V_String" />
+            <Field name="ChaplainGregEpstein" size="254" source="File: C:\Users\LalitaEranki\Downloads\mafs.csv" type="V_String" />
+            <Field name="PastorCalvinRoberson" size="254" source="File: C:\Users\LalitaEranki\Downloads\mafs.csv" type="V_String" />
+            <Field name="RachelDeAlto" size="254" source="File: C:\Users\LalitaEranki\Downloads\mafs.csv" type="V_String" />
+            <Field name="DrJessicaGriffin" size="254" source="File: C:\Users\LalitaEranki\Downloads\mafs.csv" type="V_String" />
+            <Field name="DrVivianaColes" size="254" source="File: C:\Users\LalitaEranki\Downloads\mafs.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Transpose.Transpose">
+        <Position x="378" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ErrorWarn>Warn</ErrorWarn>
+          <KeyFields>
+            <Field field="Name" />
+            <Field field="Gender" />
+            <Field field="Decision" />
+            <Field field="Status" />
+          </KeyFields>
+          <DataFields>
+            <Field field="Couple" selected="False" />
+            <Field field="Season" selected="False" />
+            <Field field="Location" selected="False" />
+            <Field field="Name" selected="False" />
+            <Field field="Age" selected="False" />
+            <Field field="Gender" selected="False" />
+            <Field field="Occupation" selected="False" />
+            <Field field="Decision" selected="False" />
+            <Field field="Status" selected="False" />
+            <Field field="DrPepperSchwartz" selected="True" />
+            <Field field="DrLoganLevkoff" selected="True" />
+            <Field field="DrJosephCilona" selected="True" />
+            <Field field="ChaplainGregEpstein" selected="True" />
+            <Field field="PastorCalvinRoberson" selected="True" />
+            <Field field="RachelDeAlto" selected="True" />
+            <Field field="DrJessicaGriffin" selected="True" />
+            <Field field="DrVivianaColes" selected="True" />
+            <Field field="*Unknown" selected="True" />
+          </DataFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTranspose" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="570" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Status" action="GroupBy" rename="Status" />
+            <SummarizeField field="Value" action="StdDev" rename="StdDev_Value" />
+            <SummarizeField field="Decision" action="GroupBy" rename="Decision" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="474" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Value" selected="True" type="Int16" size="2" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>New Workflow2_test_</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
